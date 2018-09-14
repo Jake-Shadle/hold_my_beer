@@ -1,0 +1,5 @@
+[package]
+name = "hold_my_beer"
+version = "0.1.0"
+authors = ["Jake Shadle <jake.shadle@frostbite.com>"]
+edition = "2018"
