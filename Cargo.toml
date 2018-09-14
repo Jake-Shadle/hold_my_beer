@@ -1,7 +1,8 @@
 [package]
 name = "hold_my_beer"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Jake Shadle <jake.shadle@frostbite.com>"]
 edition = "2018"
 description = "Don't let unsafe get you down"
 license = "MIT/Apache-2.0"
+repository = "https://github.com/Jake-Shadle/hold_my_beer"
