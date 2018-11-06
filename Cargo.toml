@@ -6,3 +6,6 @@ edition = "2018"
 description = "Don't let unsafe get you down"
 license = "MIT/Apache-2.0"
 repository = "https://github.com/Jake-Shadle/hold_my_beer"
+
+[badges]
+maintenance = { status = "actively-developed" }
