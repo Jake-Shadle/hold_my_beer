@@ -68,3 +68,26 @@ macro_rules! i_got_this {
         unsafe { $something_potentially_bad }
     };
 }
+
+/// Somtimes, leaps of faith are needed to achieve true greatness.
+/// It's even more impressive if you do a leap of faith in a car,
+/// but why not take advantage of the safety features available,
+/// and `buckle_up!`?
+///
+/// ```
+/// # #[macro_use] extern crate hold_my_beer;
+/// pub fn parse(arbitrary_user_input_from_the_wilds: &[u8]) -> u32 {
+///     buckle_up!({
+///         std::str::from_utf8_unchecked(arbitrary_user_input_from_the_wilds).parse::<u32>().unwrap()
+///     })
+/// }
+///
+/// let input = b"12345";
+/// assert_eq!(parse(input), 12345);
+/// ```
+#[macro_export]
+macro_rules! buckle_up {
+    ($something_potentially_bad:expr) => {
+        unsafe { $something_potentially_bad }
+    };
+}
